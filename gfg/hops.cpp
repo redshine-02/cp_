@@ -40,3 +40,5 @@ long long countWays(int n)
         // your code here
         
     }
+
+    
