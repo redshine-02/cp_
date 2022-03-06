@@ -1,6 +1,6 @@
 package leetcode.easy_interview;
 
-class Solution {
+public class duplicates_sorted_array {
     public int removeDuplicates(int[] nums) {
         int n=nums.length;
         if(n<=1){

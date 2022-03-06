@@ -1,6 +1,6 @@
 package leetcode.easy_interview;
 import java.util.*;
-class Solution {
+public class single_num {
     // 1st APPROACH ----------------->T.C = O(2N) S.C. = O(N)
     // public int singleNumber(int[] nums) {
     //     HashMap<Integer,Integer> hm =new HashMap<>();

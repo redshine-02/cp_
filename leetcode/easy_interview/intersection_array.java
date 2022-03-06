@@ -1,7 +1,7 @@
 package leetcode.easy_interview;
 
 import java.util.*;
-class Solution {
+public class intersection_array {
     public int[] intersect(int[] nums1, int[] nums2) {
         HashMap<Integer,Integer> hm = new HashMap<>();
         ArrayList<Integer> al = new ArrayList<>();

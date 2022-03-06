@@ -1,7 +1,7 @@
 package leetcode.easy_interview;
 
 import java.util.*;
-class Solution {
+public class move_zero {
     public void swap(int[] arr,int i,int j){
         int temp = arr[i];
         arr[i]=arr[j];

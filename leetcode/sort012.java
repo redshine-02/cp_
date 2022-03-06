@@ -1,6 +1,6 @@
 package leetcode;
 
-class Solution {
+public class sort012 {
     public void swap(int[] arr,int i,int j){
         int temp=arr[i];
         arr[i]=arr[j];

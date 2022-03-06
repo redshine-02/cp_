@@ -1,7 +1,7 @@
 package leetcode.easy_interview;
 
 import java.util.*;
-class Solution {
+public class rotate_image {
     public static void transpose(int[][] a){
         int n=a.length;
         for(int i=0;i<n;i++){

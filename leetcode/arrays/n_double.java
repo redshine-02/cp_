@@ -1,7 +1,7 @@
 package leetcode.arrays;
 
 import java.util.*;
-class Solution {
+public class n_double {
     public boolean checkIfExist(int[] arr) {
         HashMap<Integer,Integer> hm = new HashMap<>();
         for(int ele : arr){

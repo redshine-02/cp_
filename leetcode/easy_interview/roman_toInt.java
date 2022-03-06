@@ -2,7 +2,7 @@ package leetcode.easy_interview;
 
 import java.util.*;
 
-class Solution {
+public class roman_toInt {
     public int romanToInt(String s) {
         HashMap<Character,Integer> hm = new HashMap<>();
         hm.put('I',1);

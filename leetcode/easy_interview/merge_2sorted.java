@@ -1,7 +1,7 @@
 package leetcode.easy_interview;
 
 import java.util.*;
-class Solution {
+public class merge_2sorted {
     
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int j=0;

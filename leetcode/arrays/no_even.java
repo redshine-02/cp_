@@ -1,7 +1,7 @@
 package leetcode.arrays;
 
 import java.util.*;
-class Solution {
+public class no_even {
     public int digit(int n){
         int count=0;
         while(n>0){
