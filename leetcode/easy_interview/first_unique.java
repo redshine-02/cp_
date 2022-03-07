@@ -1,7 +1,7 @@
 package leetcode.easy_interview;
 
 import java.util.*;
-class Solution {
+public class first_unique {
     public int firstUniqChar(String s) {
         HashMap<Character,Integer> hm = new HashMap<>();
         for(int i=0;i<s.length();i++){
