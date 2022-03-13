@@ -48,30 +48,33 @@ class Solution
             int b = blocked_cells[i][1];
             board[a-1][b-1] = 1;
         }
-        int[] a = new int[1];
-        function(0,0,board,a);
-        
-        return a[0];
+        int[][] a = new int[n][m];
+        // for(int[] row : a){
+        //     Arrays.fill(row,-1);
+        // }
+        //Arrays.fill(a,-1);
+        int ways = function(0,0,board,a);
+        return ways;
     }
-    public void function(int sr , int sc , int[][] board, int[]  a){
-        if(board[sr][sc]==1){
-            return;
+    public int function(int sr , int sc , int[][] board, int[][]  dp){
+        // if(sr>=board.length || sc>=board[0].length ||board[sr][sc]==1){
+        //     return 0;
+        // }
+        if(sr>=board.length || sc>=board[0].length ||board[sr][sc]==1){
+            return 0;
         }
         if(sr==board.length-1 && sc==board[0].length-1){
-            a[0] = a[0]+1;
-            return;
+            return dp[sr][sc] = 1;
         }
         
-        if(sr+1<board.length){
-        board[sr][sc]=1;
-        function(sr+1,sc,board,a);
-        board[sr][sc]=0;
+        if(dp[sr][sc]!=0){
+            return dp[sr][sc];
         }
-        if(sc+1<board[0].length){
-        board[sr][sc]=1;
-        function(sr,sc+1,board,a);
-        board[sr][sc]=0;
-        }
+        //dp[sr][sc]+=(function(sr+1,sc,board,dp)+function(sr,sc+1,board,dp))%1000000007;
+        int count = 0 ;
+        count+=(function(sr+1,sc,board,dp))%1000000007;
+        count+=(function(sr,sc+1,board,dp))%1000000007;
         
+        return dp[sr][sc]+=count%1000000007;
     }
 }
