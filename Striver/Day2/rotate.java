@@ -1,6 +1,7 @@
 package Striver.Day2;
 
 public class rotate {
+    // *********** METHOD **************************8
     public static void transpose(int[][] a){
         int n=a.length;
         for(int i=0;i<n;i++){
